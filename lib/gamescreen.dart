@@ -52,10 +52,18 @@ class _GameScreenState extends State<GameScreen> {
               onPressed: () {
                 changeDice();
               },
-              style: ElevatedButton.styleFrom(),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color.fromARGB(255, 29, 14, 14),
+                shape: RoundedRectangleBorder(
+                  
+                  borderRadius: BorderRadius.circular(15),
+                ),
+              ),
               child: Text(
                 "Roll The Dice",
-                style: TextStyle(fontSize: 20),
+                style: TextStyle(
+                  fontSize: 20,
+                ),
               ),
             ),
           ],
